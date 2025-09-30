@@ -4,7 +4,7 @@ function helloworld() {
     console.log("Hello, world!");
 }
 function add(a, b) {
-    return a - b;
+    return a + b;
 }
 const Utils = {
     helloworld,
