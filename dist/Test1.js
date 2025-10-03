@@ -11,19 +11,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const Utils = require('./Utils');
 const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
-    //test 1
+    //test case 1
     if (Utils.add(2, 3) === 5) {
-        console.log(0);
     }
     else {
         console.log(1);
+        return;
     }
-    //test 2
-    if (Utils.add(2, 4) === 5) {
-        console.log(0);
+    //test case 2
+    if (Utils.add(-2, -3) === -4) {
     }
     else {
         console.log(2);
+        return;
     }
 });
 unit_test();
