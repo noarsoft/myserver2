@@ -19,7 +19,7 @@ const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log(1);
     }
     //test 2
-    if (Utils.add(2, 4) === 6) {
+    if (Utils.add(2, 4) === 5) {
         console.log(0);
     }
     else {
