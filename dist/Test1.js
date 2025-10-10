@@ -8,7 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 const Utils = require('./Utils');
 const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     //test case 1
@@ -19,7 +18,7 @@ const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
         return;
     }
     //test case 2
-    if (Utils.add(-2, -3) === -4) {
+    if (Utils.add(-2, -3) === -5) {
     }
     else {
         console.log(2);
@@ -27,4 +26,3 @@ const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 unit_test();
-//# sourceMappingURL=Test1.js.map
