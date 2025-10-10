@@ -19,7 +19,7 @@ mongoose_1.default.connect(mongoURI).then(() => {
 });
 app.use(Express.json());
 app.use((0, cors_1.default)());
-const port = 3000;
+const port = 80;
 // app.use("/api", userRoutes);
 app.get("/", (req, res) => {
     res.send("Hello World!hjhgjhgjhgj");
