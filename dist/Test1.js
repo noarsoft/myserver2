@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const Utils = require('./Utils');
 const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     //test case 1
-    if (Utils.add(2, 4) === 5) {
+    if (Utils.add(2, 4) === 6) {
     }
     else {
         console.log(1);
