@@ -15,3 +15,9 @@ jobs:
 
     - name: Run test
       run: node dist/Test1.js
+      
+  job2:
+      needs: job1
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "job2"
