@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const UserRoutes_1 = __importDefault(require("./UserRoutes"));
 const cors_1 = __importDefault(require("cors"));
-const mongoose_1 = __importDefault(require("mongoose"));
 const node_dns_1 = __importDefault(require("node:dns"));
 const node_path_1 = __importDefault(require("node:path"));
 node_dns_1.default.setServers(["1.1.1.1", "8.8.8.8"]);
@@ -16,18 +15,8 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use("/api", UserRoutes_1.default);
 app.get("/", (req, res) => {
-    res.send("Hello, world!");
+    res.send("Hello, world!xxxx");
 });
 app.listen(3000, () => {
     console.log("Server is running on http://localhost:3000");
-});
-mongoose_1.default.connect("mongodb+srv://iampong242:test12345678@cluster0.igalrns.mongodb.net/?appName=Cluster0")
-    .then(() => {
-    console.log("Connected to MongoDB");
-    app.listen(3001, () => {
-        console.log("Server is running on http://localhost:3001");
-    });
-})
-    .catch((error) => {
-    console.error("Error connecting to MongoDB", error);
 });
